@@ -30,6 +30,61 @@
     </variables>
 
 		<view name="system, gamelist">
+		<systemstatus name="menustatus">
+        <pos>0.995 0.0025</pos>
+        <origin>1 0</origin>
+		<height>0.0275</height>
+        <color>${backgroundColor}</color>
+        <entries>all</entries>
+            <fontPath>${mainFont}</fontPath>
+        </systemstatus>
+        <clock name="menuclock">
+            <fontSize>0.0275</fontSize>
+            <rotation>0</rotation>
+            <pos>0.025 -0.0025</pos>
+            <size>0.05 0.04</size>
+            <origin>0.5 0</origin>
+            <fontPath>${mainFont}</fontPath>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <color>${backgroundColor}</color>
+        </clock>
+		<image name="topbar">
+            	<pos>1 0</pos>
+            	<size>0.65 0.03</size>
+            	<origin>1 0</origin>
+            	<path>./assets/box.png</path>
+            	<tile>false</tile>
+            	<color>${outlineColor1}</color>
+            	<zIndex>100</zIndex>
+      		</image>
+			<image name="topbar1">
+            	<pos>0 0</pos>
+            	<size>0.05 0.03</size>
+            	<origin>0 0</origin>
+            	<path>./assets/box.png</path>
+            	<tile>false</tile>
+            	<color>${outlineColor1}</color>
+            	<zIndex>100</zIndex>
+      		</image><image name="botbar">
+            	<pos>1 1</pos>
+            	<size>0.65 0.03</size>
+            	<origin>1 1</origin>
+            	<path>./assets/box.png</path>
+            	<tile>false</tile>
+            	<color>${outlineColor1}</color>
+            	<zIndex>100</zIndex>
+      		</image>
+			<image name="botbar1">
+            	<pos>0 1</pos>
+            	<size>0.05 0.03</size>
+            	<origin>0 1</origin>
+            	<path>./assets/box.png</path>
+            	<tile>false</tile>
+            	<color>${outlineColor1}</color>
+            	<zIndex>100</zIndex>
+      		</image>
+
 			<image name="background">
             	<pos>0 0</pos>
             	<size>1 1</size>
@@ -86,15 +141,15 @@
             	<zIndex>54</zIndex>
       		</image>
 			  <helpsystem name="help">
-				<pos>0.98 0.275</pos>
+				<pos>0.98 0.985</pos>
 				<origin>1 0.5</origin>
 				<posDimmed>0.5 0.95</posDimmed>
 				<originDimmed>0.5 0.5</originDimmed>
 				<fontSizeDimmed>0.035</fontSizeDimmed>
-				<textColor>${outlineColor1}</textColor>
-				<textColorDimmed>${outlineColor1}</textColorDimmed>
-				<iconColor>${outlineColor1}</iconColor>
-				<iconColorDimmed>${outlineColor1}</iconColorDimmed>
+				<textColor>${backgroundColor}</textColor>
+				<textColorDimmed>${backgroundColor}</textColorDimmed>
+				<iconColor>${backgroundColor}</iconColor>
+				<iconColorDimmed>${backgroundColor}</iconColorDimmed>
 				<fontPath>${mainFont}</fontPath>
 				<fontSize>0.02</fontSize>
 				<opacity>0.6</opacity>
