@@ -1,0 +1,601 @@
+<!--
+   
+-->
+
+<theme>
+	<include>./navigationsounds.xml</include>
+	<include>./colors.xml</include> 
+	<include>./languages.xml</include>
+	<include>./system/metadata/_default.xml</include>
+    <include>./system/custom/metadata/_default.xml</include>
+    <include>./system/custom/metadata/${system.theme}.xml</include>
+    <include>./system/metadata/${system.theme}.xml</include>
+
+	<aspectRatio name="4:3">
+		<include>./4-3.xml</include>
+	</aspectRatio>
+	
+	<aspectRatio name="16:10">
+		<include>./16-10.xml</include>
+	</aspectRatio>
+	
+	<aspectRatio name="21:9">
+		<include>./21-9.xml</include>
+	</aspectRatio>
+
+    <variables>
+       	<mainFont>./assets/fonts/rost.otf</mainFont>
+		<syslogo>./system/logos/system-logo-white/${system.theme}.svg</syslogo>
+        <syslogocustom>./system/custom/logo/${system.theme}.svg</syslogocustom>
+    </variables>
+
+		<view name="system, gamelist">
+		<systemstatus name="menustatus">
+        <pos>0.995 0.0025</pos>
+        <origin>1 0</origin>
+		<height>0.0275</height>
+        <color>${backgroundColor}</color>
+        <entries>all</entries>
+            <fontPath>${mainFont}</fontPath>
+        </systemstatus>
+        <clock name="menuclock">
+            <fontSize>0.0275</fontSize>
+            <rotation>0</rotation>
+            <pos>0.025 -0.0025</pos>
+            <size>0.05 0.04</size>
+            <origin>0.5 0</origin>
+            <fontPath>${mainFont}</fontPath>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <color>${backgroundColor}</color>
+        </clock>
+		<image name="topbar">
+            	<pos>1 0</pos>
+            	<size>0.65 0.03</size>
+            	<origin>1 0</origin>
+            	<path>./assets/box.png</path>
+            	<tile>false</tile>
+            	<color>${outlineColor1}</color>
+            	<zIndex>100</zIndex>
+      		</image>
+			<image name="topbar1">
+            	<pos>0 0</pos>
+            	<size>0.05 0.03</size>
+            	<origin>0 0</origin>
+            	<path>./assets/box.png</path>
+            	<tile>false</tile>
+            	<color>${outlineColor1}</color>
+            	<zIndex>100</zIndex>
+      		</image><image name="botbar">
+            	<pos>1 1</pos>
+            	<size>0.65 0.03</size>
+            	<origin>1 1</origin>
+            	<path>./assets/box.png</path>
+            	<tile>false</tile>
+            	<color>${outlineColor1}</color>
+            	<zIndex>100</zIndex>
+      		</image>
+			<image name="botbar1">
+            	<pos>0 1</pos>
+            	<size>0.05 0.03</size>
+            	<origin>0 1</origin>
+            	<path>./assets/box.png</path>
+            	<tile>false</tile>
+            	<color>${outlineColor1}</color>
+            	<zIndex>100</zIndex>
+      		</image>
+
+			<image name="background">
+            	<pos>0 0</pos>
+            	<size>1 1</size>
+            	<origin>0 0</origin>
+            	<path>./assets/box.png</path>
+            	<tile>false</tile>
+            	<color>${backgroundColor}</color>
+            	<zIndex>0</zIndex>
+      		</image>
+			
+			
+			 <image name="topline">
+            	<size>0.8 2.2</size>
+				<pos>0.007 0.5</pos>
+            	<origin>0.5 0.5</origin>
+            	<path>./assets/circle.svg</path>
+            	<tile>false</tile>
+            	<color>${outlineColor1}</color>
+        	</image>
+			<image name="topline2">
+            	<size>0.8 2</size>
+				<pos>-.28 0.5</pos>
+            	<origin>0.5 0.5</origin>
+            	<path>./assets/circle.svg</path>
+            	<tile>false</tile>
+            	<color>${outlineColor1}</color>
+        	</image>
+			<image name="topline3">
+            	<size>0.6 1</size>
+				<pos>0.3 0.5</pos>
+            	<origin>0.5 0.5</origin>
+            	<path>./assets/circle2.svg</path>
+            	<tile>false</tile>
+            	<color>${backgroundColor}</color>
+				<zIndex>3</zIndex>
+        	</image>
+			<image name="controller">
+            	<pos>0.043 0.305</pos>
+            	<maxSize>0.07 0.07</maxSize>
+            	<origin>0.5 0.5</origin>
+            	<path>./system/controller-outline/${system.theme}.svg</path>
+            	<tile>false</tile>
+            	<color>${outlineColor1}</color>
+            	<zIndex>54</zIndex>
+      		</image>
+			<image name="controller1">
+            	<pos>0.043 0.695</pos>
+            	<maxSize>0.07 0.08</maxSize>
+            	<origin>0.5 0.5</origin>
+				<rotation>180</rotation>
+            	<path>./system/controller-outline/${system.theme}.svg</path>
+            	<tile>false</tile>
+            	<color>${outlineColor1}</color>
+            	<zIndex>54</zIndex>
+      		</image>
+			  <helpsystem name="help">
+				<pos>0.98 0.985</pos>
+				<origin>1 0.5</origin>
+				<posDimmed>0.5 0.95</posDimmed>
+				<originDimmed>0.5 0.5</originDimmed>
+				<fontSizeDimmed>0.035</fontSizeDimmed>
+				<textColor>${backgroundColor}</textColor>
+				<textColorDimmed>${backgroundColor}</textColorDimmed>
+				<iconColor>${backgroundColor}</iconColor>
+				<iconColorDimmed>${backgroundColor}</iconColorDimmed>
+				<fontPath>${mainFont}</fontPath>
+				<fontSize>0.02</fontSize>
+				<opacity>0.6</opacity>
+				<opacityDimmed>1</opacityDimmed>
+				<letterCase>capitalize</letterCase>
+			  </helpsystem>
+		</view>
+
+    	<view name="system">   
+			<carousel name="game_carousel">
+				<pos>-.005 0</pos>
+				<size>0.5 1.</size>
+				<itemSize>0.12 0.09</itemSize>
+				<itemRotation>8</itemRotation>
+				<type>verticalWheel</type>
+				<fastScrolling>true</fastScrolling>
+				<itemScale>1.8</itemScale>
+				<staticImage>${syslogo}</staticImage>
+                <defaultImage>${syslogocustom}</defaultImage>
+				<imageColor>${outlineColor1}</imageColor>
+				<itemRotationOrigin>-5 0.5</itemRotationOrigin>
+				<systemNameSuffix>false</systemNameSuffix>
+				<itemHorizontalAlignment>center</itemHorizontalAlignment>
+				<unfocusedItemOpacity>0.3</unfocusedItemOpacity>
+				<color>00000000</color>
+				<textBackgroundColor>00000000</textBackgroundColor>
+				<!-- Placeholder text -->
+				<text>${system.fullName}</text>
+				<textColor>${outlineColor1}</textColor>
+				<fontPath>${mainFont}</fontPath>
+				<fontSize>0.02</fontSize>
+				<letterCase>none</letterCase>
+				<lineSpacing>1</lineSpacing>
+				<zIndex>50</zIndex>
+			</carousel>
+			<gameselector name="select">
+				<selection>random</selection>
+				<gameCount>8</gameCount>
+				<allowDuplicates>true</allowDuplicates>
+			</gameselector>
+			<text name="info">
+				<pos>0.425 0.5</pos>
+				<size>0.55 0.4</size>
+				<origin>0 0.5</origin>
+				<text>${systemDescription}</text>
+				<fontPath>${mainFont}</fontPath>
+				<fontSize>0.035</fontSize>
+				<horizontalAlignment>left</horizontalAlignment>
+				<color>${outlineColor1}</color>
+				<lineSpacing>1.1</lineSpacing>
+			</text>
+			
+			<text name="gamecount">
+				<pos>0.03 0.5</pos>
+				<origin>0.5 0.5</origin>
+				<rotation>-90</rotation>
+            	<size>0.25 0.11</size>
+				<systemdata>gamecountGames</systemdata>
+				<fontPath>${mainFont}</fontPath>
+				<fontSize>0.06</fontSize>
+				<horizontalAlignment>center</horizontalAlignment>
+				<color>${outlineColor1}</color>
+			</text>
+			<text name="gamecount2">
+				<pos>0.06 0.5</pos>
+				<origin>0.5 0.5</origin>
+				<rotation>-90</rotation>
+            	<size>0.25 0.11</size>
+				<systemdata>gamecountFavorites</systemdata>
+				<fontPath>${mainFont}</fontPath>
+				<fontSize>0.06</fontSize>
+				<horizontalAlignment>center</horizontalAlignment>
+				<color>${outlineColor1}</color>
+			</text>
+			<image name="cover1">
+				<pos>0.4 0.13</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<tile>true</tile>
+				<tileSize>0 0.1</tileSize>
+				<imageType>screenshot</imageType>
+				<gameselectorEntry>1</gameselectorEntry>
+				<gradientType>vertical</gradientType>
+				<colorEnd>${backgroundColor}00</colorEnd>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover2">
+				<pos>0.6 0.13</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<tile>true</tile>
+				<tileSize>0 0.1</tileSize>
+				<imageType>screenshot</imageType>
+				<gameselectorEntry>2</gameselectorEntry>				
+				<gradientType>vertical</gradientType>
+				<colorEnd>${backgroundColor}00</colorEnd>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover3">
+				<pos>0.8 0.13</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<tile>true</tile>
+				<tileSize>0 0.1</tileSize>
+				<imageType>screenshot</imageType>
+				<gradientType>vertical</gradientType>
+				<gameselectorEntry>3</gameselectorEntry>
+				<colorEnd>${backgroundColor}00</colorEnd>
+				<zIndex>2</zIndex>
+			</image>
+			
+			<image name="cover5">
+				<pos>1 0.13</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<tile>true</tile>
+				<tileSize>0 0.1</tileSize>
+				<imageType>screenshot</imageType>
+				<gradientType>vertical</gradientType>				
+				<colorEnd>${backgroundColor}00</colorEnd>
+				<gameselectorEntry>4</gameselectorEntry>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover6">
+				<pos>0 0.13</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<tile>true</tile>
+				<tileSize>0 0.1</tileSize>
+				<imageType>screenshot</imageType>
+				<gameselectorEntry>4</gameselectorEntry>
+				<gradientType>vertical</gradientType>				
+				<colorEnd>${backgroundColor}00</colorEnd>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover7">
+				<pos>0.4 0.87</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<tile>true</tile>
+				<tileSize>0 0.1</tileSize>
+				<imageType>screenshot</imageType>
+				<gameselectorEntry>5</gameselectorEntry>
+				<gradientType>vertical</gradientType>								
+				<color>${backgroundColor}00</color>
+				<colorEnd>FFFFFF</colorEnd>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover8">
+				<pos>0.6 0.87</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<tile>true</tile>
+				<tileSize>0 0.1</tileSize>
+				<imageType>screenshot</imageType>
+				<gameselectorEntry>6</gameselectorEntry>
+				<gradientType>vertical</gradientType>								
+				<color>${backgroundColor}00</color>
+				<colorEnd>FFFFFF</colorEnd>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover9">
+				<pos>0.8 .87</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<tile>true</tile>
+				<tileSize>0 0.1</tileSize>
+				<imageType>screenshot</imageType>
+				<gameselectorEntry>7</gameselectorEntry>
+				<gradientType>vertical</gradientType>								
+				<color>${backgroundColor}00</color>
+				<colorEnd>FFFFFF</colorEnd>
+				<zIndex>2</zIndex>
+			</image>
+			
+			<image name="cover11">
+				<pos>1 0.87</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<tile>true</tile>
+				<tileSize>0 0.1</tileSize>
+				<imageType>screenshot</imageType>
+				<gameselectorEntry>0</gameselectorEntry>
+				<gradientType>vertical</gradientType>								
+				<color>${backgroundColor}00</color>
+				<colorEnd>FFFFFF</colorEnd>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover12">
+				<pos>0 0.87</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<tile>true</tile>
+				<tileSize>0 0.1</tileSize>
+				<imageType>screenshot</imageType>
+				<gameselectorEntry>0</gameselectorEntry>
+				<gradientType>vertical</gradientType>								
+				<color>${backgroundColor}00</color>
+				<colorEnd>FFFFFF</colorEnd>
+				<zIndex>2</zIndex>
+			</image>	        	
+    	</view>
+
+    	<view name="gamelist">
+			<carousel name="game_carousel">
+				<pos>-.03 0</pos>
+				<size>0.55 1.</size>
+				<itemSize>0.2 0.13</itemSize>
+				<imageType>none</imageType>
+				<itemRotation>5</itemRotation>
+				<type>verticalWheel</type>
+				<fastScrolling>true</fastScrolling>
+				<itemScale>1.35</itemScale>
+				<itemRotationOrigin>-5 0.5</itemRotationOrigin>				
+				<systemNameSuffix>false</systemNameSuffix>
+				<itemHorizontalAlignment>center</itemHorizontalAlignment>
+				<unfocusedItemOpacity>0.3</unfocusedItemOpacity>
+				<color>00000000</color>
+				<textBackgroundColor>00000000</textBackgroundColor>
+				<!-- Placeholder text -->
+				<text>${system.fullName}</text>
+				<textColor>${outlineColor1}</textColor>
+				<fontPath>${mainFont}</fontPath>
+				<fontSize>0.04</fontSize>
+				<letterCase>none</letterCase>
+				<lineSpacing>1</lineSpacing>
+				<zIndex>50</zIndex>
+			</carousel>
+			<image name="cover1">
+				<pos>0.4 0.13</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<imageType>screenshot</imageType>				
+				<gradientType>vertical</gradientType>				
+				<colorEnd>${backgroundColor}00</colorEnd>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover2">
+				<pos>0.6 0.13</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<imageType>titlescreen, screenshot</imageType>
+				<gradientType>vertical</gradientType>				
+				<colorEnd>${backgroundColor}00</colorEnd>
+				<zIndex>2</zIndex>
+				</image>
+				<image name="blind2">
+					<pos>0.8 0.13</pos>
+					<origin>.5 0.5</origin>
+					<size>.2 0.3</size>
+					<path>./assets/box.png</path>
+					<gradientType>vertical</gradientType>								
+					<color>${backgroundColor}00</color>
+					<colorEnd>${backgroundColor}</colorEnd>
+					<zIndex>3</zIndex>
+				</image>
+			<image name="cover5">
+				<pos>1 0.13</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<imageType>fanart, cover</imageType>
+				<gradientType>vertical</gradientType>				
+				<colorEnd>${backgroundColor}00</colorEnd>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover6">
+				<pos>0 0.13</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<imageType>fanart, cover</imageType>
+				<gradientType>vertical</gradientType>				
+				<colorEnd>${backgroundColor}00</colorEnd>
+				<zIndex>2</zIndex>
+			</image>			
+			<image name="cover7">
+				<pos>0.4 0.87</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<imageType>screenshot</imageType>
+				<gradientType>vertical</gradientType>								
+				<color>${backgroundColor}00</color>
+				<colorEnd>FFFFFF</colorEnd>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover8">
+				<pos>0.6 0.87</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<imageType>titlescreen, screenshot</imageType>
+				<gradientType>vertical</gradientType>								
+				<color>${backgroundColor}00</color>
+				<colorEnd>FFFFFF</colorEnd>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="blind">
+				<pos>0.8 0.87</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<path>./assets/box.png</path>
+				<gradientType>vertical</gradientType>								
+				<color>${backgroundColor}</color>
+				<colorEnd>${backgroundColor}00</colorEnd>
+				<zIndex>3</zIndex>
+			</image>
+						
+			<image name="cover11">
+				<pos>1 0.87</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<imageType>fanart, cover</imageType>
+				<gradientType>vertical</gradientType>								
+				<color>${backgroundColor}00</color>
+				<colorEnd>FFFFFF</colorEnd>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover12">
+				<pos>0 0.87</pos>
+				<origin>.5 0.5</origin>
+				<size>.2 0.3</size>
+				<imageType>fanart, cover</imageType>
+				<gradientType>vertical</gradientType>								
+				<color>${backgroundColor}00</color>
+				<colorEnd>FFFFFF</colorEnd>
+				<zIndex>2</zIndex>
+			</image>			
+      		<image name="Syslogo">
+				<path>${syslogo}</path>
+                <default>${syslogocustom}</default>
+            	<pos>0.047 0.5</pos>
+				<origin>0.5 0.5</origin>
+				<rotation>-90</rotation>
+            	<maxSize>0.17 0.11</maxSize>
+				<color>${outlineColor1}</color>
+			</image>
+			<image name="md_cover">
+				<pos>0.52 0.5</pos>
+				<maxSize>0.24 0.3</maxSize>
+				<origin>0.5 0.5</origin>
+				<imageType>cover</imageType>
+				<tile>true</tile>
+			</image>  
+			<text name="player1">
+				<metadata>players</metadata>
+				<fontPath>${mainFont}</fontPath>
+				<fontSize>0.03</fontSize>
+				<color>${outlineColor1}</color>
+				<pos>0.76 0.33</pos>
+			</text>
+			<text name="player2">
+				<text>${langLabelPlayers}:</text>
+				<metadataElement>true</metadataElement>
+				<fontPath>${mainFont}</fontPath>
+				<fontSize>0.03</fontSize>
+				<color>${outlineColor1}</color>
+				<pos>0.65 0.33</pos>
+			</text>
+			<text name="description1">
+				<size>0.33 0.3</size>
+				<metadata>description</metadata>
+				<fontPath>${mainFont}</fontPath>
+				<fontSize>0.035</fontSize>
+				<lineSpacing>1</lineSpacing>
+				<color>${outlineColor1}</color>
+				<pos>0.65 0.38</pos>
+			</text>
+			<text name="collectionsSystemName">
+				<pos>0.075 0.5</pos>
+				<origin>0.5 0.5</origin>
+				<rotation>-90</rotation>
+            	<size>0.24 0.11</size>
+				<systemNameSuffix>true</systemNameSuffix>
+				<fontPath>${mainFont}</fontPath>
+				<fontSize>0.03</fontSize>
+				<horizontalAlignment>center</horizontalAlignment>
+				<color>${outlineColor1}</color>
+				<zIndex>50</zIndex>
+			</text>
+			<badges name="all">
+				<pos>0.44 0.66</pos>
+				<size>0.47 0.12</size>
+				<horizontalAlignment>center</horizontalAlignment>
+				<direction>row</direction>
+				<lines>1</lines>
+				<itemsPerLine>7</itemsPerLine>
+				<slots>controller, completed, favorite, altemulator, kidgame, collection, manual</slots>
+				<controllerPos>0.51 0.415</controllerPos>
+				<controllerSize>0.85</controllerSize>
+				<folderLinkSize>0.85 0.9</folderLinkSize>
+				<folderLinkPos>0.47 0.48</folderLinkPos>
+				<folderLinkIconColor>${backgroundColor}</folderLinkIconColor>
+				<customFolderLinkIcon>./assets/badges/link.png</customFolderLinkIcon>
+				<badgeIconColor>${outlineColor1}</badgeIconColor>
+				<customBadgeIcon badge="manual">./assets/badges/manual.png</customBadgeIcon>
+				<customBadgeIcon badge="broken">./assets/badges/broken.png</customBadgeIcon>
+				<customBadgeIcon badge="kidgame">./assets/badges/kid.png</customBadgeIcon>
+				<customBadgeIcon badge="collection">./assets/badges/collect.png</customBadgeIcon>
+				<customBadgeIcon badge="altemulator">./assets/badges/alt.png</customBadgeIcon>
+				<customBadgeIcon badge="favorite">./assets/badges/fave.png</customBadgeIcon>
+				<customBadgeIcon badge="completed">./assets/badges/complete.png</customBadgeIcon>
+				<customBadgeIcon badge="controller">./assets/badges/control.png</customBadgeIcon>   
+			</badges>
+			<rating name="rating">
+				<pos>0.885 0.335</pos>
+				<size>0.08 0.03</size>
+				<interpolation>nearest</interpolation>
+            	<color>${outlineColor1}</color>
+            	<filledPath>./assets/rating_filled.svg</filledPath>
+            	<unfilledPath>./assets/rating_empty.svg</unfilledPath>
+			</rating>
+  		</view>
+	<variant name="withVideo">
+		<view name="gamelist">
+			<video name="cover3">
+				<pos>0.8 0.13</pos>
+				<origin>.5 0.5</origin>
+				<cropSize>.2 0.28</cropSize>
+				<audio>false</audio>
+				<imageType>physicalmedia, screenshot</imageType>
+				<zIndex>2</zIndex>
+			</video>
+			<video name="cover9">
+				<pos>0.8 0.87</pos>
+				<origin>.5 0.5</origin>
+				<cropSize>.2 0.28</cropSize>
+				<imageType>physicalmedia, screenshot</imageType>
+				
+				<zIndex>2</zIndex>
+			</video>
+		</view>
+	</variant>
+	<variant name="withoutVideo">
+		<view name="gamelist">
+			<image name="cover3">
+				<pos>0.8 00.13</pos>
+				<origin>.5 0.5</origin>
+				<maxSize>.2 0.3</maxSize>
+				<imageType>physicalmedia, screenshot</imageType>
+				<zIndex>2</zIndex>
+			</image>
+			<image name="cover9">
+				<pos>0.8 .87</pos>
+				<origin>.5 0.5</origin>
+				<maxSize>.2 0.3</maxSize>
+				<imageType>physicalmedia, screenshot</imageType>
+				<zIndex>2</zIndex>
+			</image>
+		</view>
+	</variant>
+</theme>
